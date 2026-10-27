@@ -1,0 +1,1 @@
+../Functions/canvas_closebang_005000d0.c

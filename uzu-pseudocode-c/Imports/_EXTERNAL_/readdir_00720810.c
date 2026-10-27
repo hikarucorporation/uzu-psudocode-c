@@ -1,0 +1,19 @@
+// Function : readdir
+// Namespace: _EXTERNAL_
+// Entry    : 00720810
+// Prototype: dirent * readdir(DIR * __dirp)
+// Body     : 00720810 - 00720810
+
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+
+dirent * readdir(DIR *__dirp)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+                    /* readdir@GLIBC_2.2.5 */
+  halt_baddata();
+}
+
+

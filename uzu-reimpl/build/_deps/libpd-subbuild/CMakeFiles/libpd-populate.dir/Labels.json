@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/CMakeFiles/libpd-populate"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/CMakeFiles/libpd-populate.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/CMakeFiles/libpd-populate-complete.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-build.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-configure.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-download.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-install.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-patch.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-test.rule"
+		},
+		{
+			"file" : "/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/libpd-populate-prefix/src/libpd-populate-stamp/libpd-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libpd-populate"
+		],
+		"name" : "libpd-populate"
+	}
+}

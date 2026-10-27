@@ -1,0 +1,1 @@
+../../Functions/BinaryData/getNamedResource_004d51c0.c

@@ -1,0 +1,1 @@
+../Functions/text_getfont_0052c800.c

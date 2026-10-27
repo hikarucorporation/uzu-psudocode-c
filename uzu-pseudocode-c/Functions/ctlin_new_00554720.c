@@ -1,0 +1,71 @@
+// Function : ctlin_new
+// Namespace: 
+// Entry    : 00554720
+// Prototype: long * ctlin_new(undefined8 param_1, undefined8 param_2, undefined8 param_3, undefined8 param_4, undefined8 param_5, undefined8 param_6, undefined8 param_7, undefined8 param_8, undefined8 param_9, undefined8 param_10, long param_11, undefined8 param_12, char * param_13, undefined8 param_14)
+// Body     : 00554720 - 0055482d
+
+
+long * ctlin_new(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
+                undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 param_8,
+                undefined8 param_9,undefined8 param_10,long param_11,undefined8 param_12,
+                char *param_13,undefined8 param_14)
+
+{
+  long *plVar1;
+  long *plVar2;
+  undefined8 extraout_RDX;
+  undefined8 extraout_RDX_00;
+  undefined8 extraout_RDX_01;
+  undefined8 extraout_RDX_02;
+  int iVar3;
+  float fVar4;
+  float fVar5;
+  undefined4 extraout_XMM0_Da;
+  undefined4 extraout_XMM0_Da_00;
+  undefined4 extraout_XMM0_Da_01;
+  undefined4 extraout_XMM0_Da_02;
+  undefined4 extraout_XMM0_Db;
+  undefined4 extraout_XMM0_Db_00;
+  undefined4 extraout_XMM0_Db_01;
+  undefined4 extraout_XMM0_Db_02;
+  
+  plVar1 = pd_new(param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8,ctlin_class,
+                  param_10,param_11,param_12,param_13,param_14);
+  iVar3 = (int)param_10;
+  if (iVar3 == 0) {
+    fVar4 = DAT_005d9054;
+  }
+  else {
+    fVar4 = (float)atom_getfloatarg(0,iVar3,param_11);
+    fVar4 = (float)(int)fVar4;
+  }
+  fVar5 = (float)atom_getfloatarg(1,iVar3,param_11);
+  *(float *)(plVar1 + 6) = (float)(int)fVar5;
+  *(float *)((long)plVar1 + 0x34) = fVar4;
+  plVar2 = (long *)__tls_get_addr(&PTR_007159b0);
+  plVar2 = outlet_new(CONCAT44(extraout_XMM0_Db,extraout_XMM0_Da),param_2,param_3,param_4,param_5,
+                      param_6,param_7,param_8,(long)plVar1,*plVar2 + 0x78,extraout_RDX,param_12,
+                      param_13,param_14);
+  plVar1[7] = (long)plVar2;
+  if ((int)fVar5 == 0) {
+    if (*(float *)((long)plVar1 + 0x34) <= 0.0 && *(float *)((long)plVar1 + 0x34) != 0.0) {
+      plVar2 = (long *)__tls_get_addr(&PTR_007159b0);
+      plVar2 = outlet_new(CONCAT44(extraout_XMM0_Db_00,extraout_XMM0_Da_00),param_2,param_3,param_4,
+                          param_5,param_6,param_7,param_8,(long)plVar1,*plVar2 + 0x78,
+                          extraout_RDX_00,param_12,param_13,param_14);
+      plVar1[8] = (long)plVar2;
+    }
+    plVar2 = (long *)__tls_get_addr(&PTR_007159b0);
+    plVar2 = outlet_new(CONCAT44(extraout_XMM0_Db_01,extraout_XMM0_Da_01),param_2,param_3,param_4,
+                        param_5,param_6,param_7,param_8,(long)plVar1,*plVar2 + 0x78,extraout_RDX_01,
+                        param_12,param_13,param_14);
+    plVar1[9] = (long)plVar2;
+  }
+  plVar2 = (long *)__tls_get_addr(&PTR_007159b0);
+  pd_bind(CONCAT44(extraout_XMM0_Db_02,extraout_XMM0_Da_02),param_2,param_3,param_4,param_5,param_6,
+          param_7,param_8,plVar1,*(long *)(*(long *)(*plVar2 + 0x30) + 0x18),extraout_RDX_02,
+          param_12,param_13,param_14);
+  return plVar1;
+}
+
+

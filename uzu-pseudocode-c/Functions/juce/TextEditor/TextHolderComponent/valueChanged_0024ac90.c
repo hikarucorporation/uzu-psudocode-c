@@ -1,0 +1,21 @@
+// Function : valueChanged
+// Namespace: juce:TextEditor:TextHolderComponent
+// Entry    : 0024ac90
+// Prototype: undefined valueChanged(undefined8 param_1_00, float param_2, TextHolderComponent * this, undefined8 param_4, undefined8 param_5, undefined8 param_6, undefined8 param_7, undefined8 * * * * * * * param_8)
+// Body     : 0024ac90 - 0024ac98
+
+
+/* non-virtual thunk to juce::TextEditor::TextHolderComponent::valueChanged(juce::Value&) */
+
+void __thiscall
+juce::TextEditor::TextHolderComponent::valueChanged
+          (undefined8 param_1_00,float param_2,TextHolderComponent *this,undefined8 param_4,
+          undefined8 param_5,undefined8 param_6,undefined8 param_7,undefined8 *******param_8)
+
+{
+  textWasChangedByValue
+            (param_1_00,param_2,*(TextEditor **)(this + 8),param_4,param_5,param_6,param_7,param_8);
+  return;
+}
+
+

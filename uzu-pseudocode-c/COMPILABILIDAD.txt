@@ -1,0 +1,45 @@
+UZU.so - ¿se puede compilar?
+============================
+
+RESPUESTA CORTA: NO. Ni con los tipos y las globales exportadas.
+El paquete sirve para leer/reimplementar, no para construir un .so.
+
+Pruebas hechas con gcc 14 (x86-64):
+
+  1) gcc -std=gnu11 -fsyntax-only _types/types.h
+     -> 25 errores.
+     Los mas graves: nombres C++ demangled usados como identificadores C:
+       struct (anonymous_namespace) { ... }
+       struct __shared_ptr<juce::Array<...>,(__gnu_cxx::_Lock_policy)2> { ... }
+       struct accelerator_t<OT::Layout::GPOS> { ... }
+     C no admite <>, ::, parentesis, comas ni espacios en un identificador.
+
+  2) _types/functions.h y _data/globals.h dependen de types.h, asi que
+     arrastran esos errores.
+
+  3) Aunque se arreglen los nombres, los 11.829 .c siguen sin compilar:
+     - 4.687 usan __thiscall (no existe en GCC x86-64).
+     - Decenas de miles usan tipos "placeholder" vacios: el codigo accede a
+       campos que no estan definidos en la struct.
+     - 1.858 usan variables sinteticas extraout_* (no declaradas).
+     - 266 usan unaff_*, 217 in_RAX.
+     - 1.969 usan macros CONCAT* y 253 SUB* (no definidas).
+     - Nombres de funcion C++ (std::vector<...>::~vector) que no son
+       definiciones C++ validas fuera de la clase.
+     - Funciones sobrecargadas con el mismo nombre en ficheros distintos.
+     - Llamadas a FUN_*/funciones externas sin prototipo.
+     - 2 funciones solo tienen ASM.
+     - Dependencias: JUCE, VST3 SDK, libc, libpd.
+
+EXCEPCION:
+  Funciones hoja muy simples SI pueden compilar aisladas con un shim de
+  typedefs. Ejemplo verificado:
+     Functions/swap4_00599f60.c
+     gcc -std=gnu11 -fsyntax-only -include shim.h ... -> OK
+  Pero eso no escala al plugin: no hay main/entry points reconstruidos,
+  faltan structs reales y el ABI de VST3/JUCE.
+
+QUE HARIA FALTA PARA UN .so FUNCIONAL:
+  - Reimplementar sobre el SDK de JUCE/VST3 usando el pseudocodigo como guia.
+  - O parchear/binpatchear el .so original.
+  - Recompilar el pseudocodigo tal cual no es una via realista.

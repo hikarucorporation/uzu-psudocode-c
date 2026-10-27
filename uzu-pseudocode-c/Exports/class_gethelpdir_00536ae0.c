@@ -1,0 +1,1 @@
+../Functions/class_gethelpdir_00536ae0.c

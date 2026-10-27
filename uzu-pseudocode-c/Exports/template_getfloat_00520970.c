@@ -1,0 +1,1 @@
+../Functions/template_getfloat_00520970.c

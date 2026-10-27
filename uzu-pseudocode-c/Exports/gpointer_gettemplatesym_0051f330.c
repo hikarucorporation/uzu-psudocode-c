@@ -1,0 +1,1 @@
+../Functions/gpointer_gettemplatesym_0051f330.c

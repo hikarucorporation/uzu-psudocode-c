@@ -1,0 +1,17 @@
+// Function : ~ComboBox
+// Namespace: juce:ComboBox
+// Entry    : 002dced0
+// Prototype: undefined ~ComboBox(ComboBox * this)
+// Body     : 002dced0 - 002dcedb
+
+
+/* non-virtual thunk to juce::ComboBox::~ComboBox() */
+
+void __thiscall juce::ComboBox::~ComboBox(ComboBox *this)
+
+{
+  ~ComboBox(this + -0x100);
+  return;
+}
+
+

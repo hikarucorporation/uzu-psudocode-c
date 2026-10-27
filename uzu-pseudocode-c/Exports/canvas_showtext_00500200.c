@@ -1,0 +1,1 @@
+../Functions/canvas_showtext_00500200.c

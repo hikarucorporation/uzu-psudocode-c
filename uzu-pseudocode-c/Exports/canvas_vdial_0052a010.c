@@ -1,0 +1,1 @@
+../Functions/canvas_vdial_0052a010.c

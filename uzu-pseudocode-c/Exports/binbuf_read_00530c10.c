@@ -1,0 +1,1 @@
+../Functions/binbuf_read_00530c10.c

@@ -1,0 +1,1 @@
+../Functions/canvas_getcurrentdir_004fdd20.c

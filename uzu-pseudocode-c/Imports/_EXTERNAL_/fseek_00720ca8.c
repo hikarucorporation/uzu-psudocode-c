@@ -1,0 +1,19 @@
+// Function : fseek
+// Namespace: _EXTERNAL_
+// Entry    : 00720ca8
+// Prototype: int fseek(FILE * __stream, long __off, int __whence)
+// Body     : 00720ca8 - 00720ca8
+
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Unknown calling convention -- yet parameter storage is locked */
+
+int fseek(FILE *__stream,long __off,int __whence)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+                    /* fseek@GLIBC_2.2.5 */
+  halt_baddata();
+}
+
+

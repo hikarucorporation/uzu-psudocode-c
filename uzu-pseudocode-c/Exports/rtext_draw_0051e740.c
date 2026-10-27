@@ -1,0 +1,1 @@
+../Functions/rtext_draw_0051e740.c

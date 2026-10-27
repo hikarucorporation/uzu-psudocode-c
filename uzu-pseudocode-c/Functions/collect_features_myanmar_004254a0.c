@@ -1,0 +1,121 @@
+// Function : collect_features_myanmar
+// Namespace: 
+// Entry    : 004254a0
+// Prototype: undefined collect_features_myanmar(long param_1)
+// Body     : 004254a0 - 00425745
+
+
+/* WARNING: Unknown calling convention: __cdecl -- yet parameter storage is locked */
+/* collect_features_myanmar(hb_ot_shape_planner_t*) */
+
+void __cdecl collect_features_myanmar(long param_1)
+
+{
+  hb_vector_t<hb_ot_map_builder_t::feature_info_t,false> *this;
+  hb_vector_t<hb_ot_map_builder_t::stage_info_t,false> *this_00;
+  undefined8 *puVar1;
+  
+  this_00 = (hb_vector_t<hb_ot_map_builder_t::stage_info_t,false> *)(param_1 + 0x88);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::stage_info_t,false>::push(this_00);
+  *(undefined4 *)puVar1 = *(undefined4 *)(param_1 + 0x70);
+  puVar1[1] = setup_syllables_myanmar;
+  *(int *)(param_1 + 0x70) = *(int *)(param_1 + 0x70) + 1;
+  this = (hb_vector_t<hb_ot_map_builder_t::feature_info_t,false> *)(param_1 + 0x78);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x6c6f636c;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x4100000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x63636d70;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x4100000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::stage_info_t,false>::push(this_00);
+  *(undefined4 *)puVar1 = *(undefined4 *)(param_1 + 0x70);
+  puVar1[1] = reorder_myanmar;
+  *(int *)(param_1 + 0x70) = *(int *)(param_1 + 0x70) + 1;
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x72706866;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x4900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::stage_info_t,false>::push(this_00);
+  *(undefined4 *)puVar1 = *(undefined4 *)(param_1 + 0x70);
+  puVar1[1] = 0;
+  *(int *)(param_1 + 0x70) = *(int *)(param_1 + 0x70) + 1;
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x70726566;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x4900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::stage_info_t,false>::push(this_00);
+  *(undefined4 *)puVar1 = *(undefined4 *)(param_1 + 0x70);
+  puVar1[1] = 0;
+  *(int *)(param_1 + 0x70) = *(int *)(param_1 + 0x70) + 1;
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x626c7766;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x4900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::stage_info_t,false>::push(this_00);
+  *(undefined4 *)puVar1 = *(undefined4 *)(param_1 + 0x70);
+  puVar1[1] = 0;
+  *(int *)(param_1 + 0x70) = *(int *)(param_1 + 0x70) + 1;
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x70737466;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x4900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::stage_info_t,false>::push(this_00);
+  *(undefined4 *)puVar1 = *(undefined4 *)(param_1 + 0x70);
+  puVar1[1] = 0;
+  *(int *)(param_1 + 0x70) = *(int *)(param_1 + 0x70) + 1;
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::stage_info_t,false>::push(this_00);
+  *(undefined4 *)puVar1 = *(undefined4 *)(param_1 + 0x70);
+  puVar1[1] = hb_syllabic_clear_var;
+  *(int *)(param_1 + 0x70) = *(int *)(param_1 + 0x70) + 1;
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x70726573;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x61627673;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x626c7773;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  puVar1 = hb_vector_t<hb_ot_map_builder_t::feature_info_t,false>::push(this);
+  *(undefined4 *)puVar1 = 0x70737473;
+  *(undefined4 *)((long)puVar1 + 4) = *(undefined4 *)(param_1 + 0x7c);
+  puVar1[1] = 0x900000001;
+  *(undefined4 *)(puVar1 + 2) = 1;
+  *(undefined4 *)((long)puVar1 + 0x14) = *(undefined4 *)(param_1 + 0x70);
+  *(undefined4 *)(puVar1 + 3) = *(undefined4 *)(param_1 + 0x74);
+  return;
+}
+
+

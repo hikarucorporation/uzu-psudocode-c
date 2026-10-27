@@ -1,0 +1,1 @@
+../Functions/canvas_rename_004fdf50.c

@@ -1,0 +1,8 @@
+apply_003ee0d0.c
+create_AAT__Chain_AAT__ExtendedTypes___003e75a0.c
+dispatch_AAT__hb_aat_apply_context_t__003e7690.c
+dispatch_hb_sanitize_context_t__003dac70.c
+dispatch_hb_sanitize_context_t__003dcb30.c
+drawContent_0024af80.c
+hb_aat_layout_substitute_003de620.c
+sanitize_003f3e00.c

@@ -1,0 +1,64 @@
+; Function : create<AAT::Chain<AAT::ObsoleteTypes>>
+; Namespace: AAT:hb_aat_layout_chain_accelerator_t
+; Entry    : 003e1b60
+; Body     : 003e1b60 - 003e1f31
+
+003e1b60  55   PUSH RBP
+003e1b61  41 57   PUSH R15
+003e1b63  41 56   PUSH R14
+003e1b65  41 55   PUSH R13
+003e1b67  41 54   PUSH R12
+003e1b69  53   PUSH RBX
+003e1b6a  50   PUSH RAX
+003e1b6b  49 89 fe   MOV R14,RDI
+003e1b6e  0f b7 5f 0a   MOVZX EBX,word ptr [RDI + 0xa]
+003e1b72  89 dd   MOV EBP,EBX
+003e1b74  66 c1 c5 08   ROL BP,0x8
+003e1b78  0f b7 c5   MOVZX EAX,BP
+003e1b7b  48 c1 e0 03   SHL RAX,0x3
+003e1b7f  48 8d 34 40   LEA RSI,[RAX + RAX*0x2]
+003e1b83  bf 01 00 00 00   MOV EDI,0x1
+003e1b88  e8 b3 c7 d7 ff   CALL 0x0015e340
+003e1b8d  48 85 c0   TEST RAX,RAX
+003e1b90  0f 84 8b 03 00 00   JZ 0x003e1f21
+003e1b96  66 85 db   TEST BX,BX
+003e1b99  0f 84 84 03 00 00   JZ 0x003e1f23
+003e1b9f  41 0f b7 4e 08   MOVZX ECX,word ptr [R14 + 0x8]
+003e1ba4  66 c1 c1 08   ROL CX,0x8
+003e1ba8  0f b7 c9   MOVZX ECX,CX
+003e1bab  48 8d 0c 49   LEA RCX,[RCX + RCX*0x2]
+003e1baf  4d 8d 3c 8e   LEA R15,[R14 + RCX*0x4]
+003e1bb3  49 83 c7 0c   ADD R15,0xc
+003e1bb7  66 83 fd 02   CMP BP,0x2
+003e1bbb  b9 01 00 00 00   MOV ECX,0x1
+003e1bc0  0f 43 cd   CMOVNC ECX,EBP
+003e1bc3  44 0f b7 c9   MOVZX R9D,CX
+003e1bc7  31 db   XOR EBX,EBX
+003e1bc9  48 8d 15 4c e5 1f 00   LEA RDX,[0x5e011c]
+003e1bd0  66 0f 76 c0   PCMPEQD XMM0,XMM0
+003e1bd4  45 31 db   XOR R11D,R11D
+003e1bd7  44 89 4c 24 04   MOV dword ptr [RSP + 0x4],R9D
+003e1bdc  eb 29   JMP 0x003e1c07
+003e1bec  41 0f b7 0f   MOVZX ECX,word ptr [R15]
+003e1bf0  66 c1 c1 08   ROL CX,0x8
+003e1bf4  0f b7 c9   MOVZX ECX,CX
+003e1bf7  49 01 cf   ADD R15,RCX
+003e1bfa  41 83 c3 01   ADD R11D,0x1
+003e1bfe  45 39 cb   CMP R11D,R9D
+003e1c01  0f 84 1c 03 00 00   JZ 0x003e1f23
+003e1c07  41 0f b7 4f 02   MOVZX ECX,word ptr [R15 + 0x2]
+003e1c0c  c1 e9 08   SHR ECX,0x8
+003e1c0f  80 f9 05   CMP CL,0x5
+003e1c12  77 d8   JA 0x003e1bec
+003e1c14  48 63 0c 8a   MOVSXD RCX,dword ptr [RDX + RCX*0x4]
+003e1c18  48 01 d1   ADD RCX,RDX
+003e1c1b  ff e1   JMP RCX
+003e1f21  31 c0   XOR EAX,EAX
+003e1f23  48 83 c4 08   ADD RSP,0x8
+003e1f27  5b   POP RBX
+003e1f28  41 5c   POP R12
+003e1f2a  41 5d   POP R13
+003e1f2c  41 5e   POP R14
+003e1f2e  41 5f   POP R15
+003e1f30  5d   POP RBP
+003e1f31  c3   RET

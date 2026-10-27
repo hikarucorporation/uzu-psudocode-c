@@ -1,0 +1,2 @@
+/usr/bin/ar qc libUZUAssets.a CMakeFiles/UZUAssets.dir/juce_binarydata_UZUAssets/JuceLibraryCode/BinaryData1.cpp.o CMakeFiles/UZUAssets.dir/juce_binarydata_UZUAssets/JuceLibraryCode/BinaryData2.cpp.o CMakeFiles/UZUAssets.dir/juce_binarydata_UZUAssets/JuceLibraryCode/BinaryData3.cpp.o CMakeFiles/UZUAssets.dir/juce_binarydata_UZUAssets/JuceLibraryCode/BinaryData4.cpp.o
+/usr/bin/ranlib libUZUAssets.a

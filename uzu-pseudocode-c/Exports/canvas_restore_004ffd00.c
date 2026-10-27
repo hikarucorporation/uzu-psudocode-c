@@ -1,0 +1,1 @@
+../Functions/canvas_restore_004ffd00.c

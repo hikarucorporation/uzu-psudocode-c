@@ -1,0 +1,59 @@
+// Function : convert[abi:cxx11]
+// Namespace: Steinberg:Vst:StringConvert
+// Entry    : 0018e600
+// Prototype: StringConvert * convert[abi:cxx11](StringConvert * this, long param_1)
+// Body     : 0018e600 - 0018e70c
+
+
+/* Steinberg::Vst::StringConvert::convert[abi:cxx11](char16_t const*) */
+
+StringConvert * __thiscall
+Steinberg::Vst::StringConvert::convert_abi_cxx11_(StringConvert *this,long param_1)
+
+{
+  short *psVar1;
+  int iVar2;
+  long lVar3;
+  
+  if ((anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_ == '\0') {
+    iVar2 = __cxa_guard_acquire(&(anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_);
+    if (iVar2 != 0) {
+                    /* try { // try from 0018e658 to 0018e661 has its CatchHandler @ 0018e70d */
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._0_8_ = operator_new(0x20);
+      *(undefined4 *)((anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._0_8_ + 8) = 0;
+      *(char **)((anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._0_8_ + 0x10) = "ll"
+      ;
+      *(undefined4 *)((anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._0_8_ + 0x18) =
+           0;
+      *(undefined **)(anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._0_8_ =
+           PTR_vtable_00715e88 + 0x10;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._8_8_ = 0x71b5d0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._16_8_ = 0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_[0x18] = 0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._40_8_ = 0x71b5f0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._48_8_ = 0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._56_2_ = 0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._72_8_ = 0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._80_8_ = 0;
+      (anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_._88_2_ = 0;
+      __cxa_atexit(std::__cxx11::
+                   wstring_convert<std::codecvt_utf8_utf16<char16_t,1114111ul,(std::codecvt_mode)0>,char16_t,std::allocator<char16_t>,std::allocator<char>>
+                   ::~wstring_convert,(anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_
+                   ,&__dso_handle);
+      __cxa_guard_release(&(anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_);
+    }
+  }
+  lVar3 = param_1 + -2;
+  do {
+    psVar1 = (short *)(lVar3 + 2);
+    lVar3 = lVar3 + 2;
+  } while (*psVar1 != 0);
+  std::__cxx11::
+  wstring_convert<std::codecvt_utf8_utf16<char16_t,1114111ul,(std::codecvt_mode)0>,char16_t,std::allocator<char16_t>,std::allocator<char>>
+  ::to_bytes((ulong *)this,
+             (undefined8 *)(anonymous_namespace)::converter[abi:cxx11]()::conv_abi_cxx11_,param_1,
+             lVar3);
+  return this;
+}
+
+

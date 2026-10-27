@@ -1,0 +1,1 @@
+../Functions/canvas_redrawallfortemplatecanvas_00500900.c

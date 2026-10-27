@@ -1,0 +1,22 @@
+// Function : ~AnimatedImageButton
+// Namespace: AnimatedImageButton
+// Entry    : 0016c500
+// Prototype: undefined ~AnimatedImageButton(AnimatedImageButton * this)
+// Body     : 0016c500 - 0016c553
+
+
+/* non-virtual thunk to AnimatedImageButton::~AnimatedImageButton() */
+
+void __thiscall AnimatedImageButton::~AnimatedImageButton(AnimatedImageButton *this)
+
+{
+  *(undefined ***)(this + -0x240) = &PTR__AnimatedImageButton_00701798;
+  *(undefined ***)(this + -0x150) = &PTR__AnimatedImageButton_00701980;
+  *(undefined ***)this = &PTR__AnimatedImageButton_007019b0;
+  juce::Image::~Image((Image *)(this + 0x28));
+  juce::Timer::~Timer((Timer *)this);
+  juce::ImageButton::~ImageButton((ImageButton *)(this + -0x240));
+  return;
+}
+
+

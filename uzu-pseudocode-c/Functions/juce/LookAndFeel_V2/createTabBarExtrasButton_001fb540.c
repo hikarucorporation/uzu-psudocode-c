@@ -1,0 +1,668 @@
+// Function : createTabBarExtrasButton
+// Namespace: juce:LookAndFeel_V2
+// Entry    : 001fb540
+// Prototype: Button * createTabBarExtrasButton(void)
+// Body     : 001fb540 - 001fc2ae
+
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+/* juce::LookAndFeel_V2::createTabBarExtrasButton() */
+
+Button * juce::LookAndFeel_V2::createTabBarExtrasButton(void)
+
+{
+  long *plVar1;
+  undefined8 *puVar2;
+  int iVar3;
+  void *pvVar4;
+  byte bVar5;
+  void *pvVar6;
+  DrawableShape *pDVar7;
+  Button *this;
+  uint uVar8;
+  uint uVar9;
+  ulong uVar10;
+  long lVar11;
+  int *piVar12;
+  undefined4 extraout_XMM0_Da;
+  undefined4 extraout_XMM0_Da_00;
+  undefined4 extraout_XMM0_Da_01;
+  undefined4 extraout_XMM0_Da_02;
+  undefined4 extraout_XMM0_Db;
+  undefined4 extraout_XMM0_Db_00;
+  undefined4 extraout_XMM0_Db_01;
+  undefined4 extraout_XMM0_Db_02;
+  undefined8 uVar14;
+  undefined8 uVar13;
+  undefined8 extraout_XMM1_Qa;
+  undefined8 extraout_XMM1_Qa_00;
+  undefined8 extraout_XMM1_Qa_01;
+  undefined8 extraout_XMM1_Qa_02;
+  undefined1 auVar15 [16];
+  void *local_7e8;
+  uint uStack_7e0;
+  uint uStack_7dc;
+  float local_7d8;
+  float fStack_7d4;
+  float fStack_7d0;
+  float fStack_7cc;
+  DrawableShape local_7c8;
+  long local_7b8;
+  undefined **local_7b0;
+  void *local_7a8;
+  long *plStack_7a0;
+  undefined1 local_798 [16];
+  undefined8 local_788;
+  ulong local_770;
+  undefined8 local_650;
+  undefined4 local_648;
+  undefined8 local_640;
+  undefined8 uStack_638;
+  void *local_630;
+  undefined8 uStack_628;
+  undefined8 local_620;
+  undefined8 uStack_618;
+  DrawableShape local_610;
+  undefined8 local_608;
+  undefined8 uStack_600;
+  undefined8 local_5f8;
+  undefined8 uStack_5f0;
+  undefined1 local_5e8;
+  undefined4 local_5e0 [2];
+  undefined8 local_5d8;
+  undefined8 uStack_5d0;
+  undefined1 local_5c8 [16];
+  undefined8 local_5b8;
+  undefined4 local_5b0;
+  undefined8 local_5a8;
+  undefined8 uStack_5a0;
+  undefined1 local_598 [16];
+  undefined8 local_588;
+  undefined **local_580 [8];
+  ulong local_540;
+  undefined8 local_420;
+  undefined4 local_418;
+  undefined8 local_410;
+  undefined8 uStack_408;
+  void *local_400;
+  undefined8 uStack_3f8;
+  undefined8 local_3f0;
+  undefined8 uStack_3e8;
+  DrawableShape local_3e0;
+  undefined8 local_3d8;
+  undefined8 uStack_3d0;
+  undefined8 local_3c8;
+  undefined8 uStack_3c0;
+  undefined1 local_3b8;
+  undefined4 local_3b0 [2];
+  undefined8 local_3a8;
+  undefined8 uStack_3a0;
+  undefined1 local_398 [16];
+  undefined8 local_388;
+  undefined4 local_380;
+  undefined8 local_378;
+  undefined8 uStack_370;
+  undefined1 local_368 [16];
+  undefined8 local_358;
+  undefined **local_350;
+  void *local_348;
+  long *plStack_340;
+  undefined1 local_338 [16];
+  undefined8 local_328;
+  undefined1 local_1f0 [16];
+  undefined8 local_1e0;
+  undefined8 local_1d8;
+  undefined8 uStack_1d0;
+  undefined1 local_1c8;
+  undefined **local_1c0;
+  void *local_1b8;
+  long *plStack_1b0;
+  undefined1 local_1a8 [16];
+  undefined8 local_198;
+  undefined1 local_60 [16];
+  undefined8 local_50;
+  undefined8 local_48;
+  undefined8 uStack_40;
+  undefined1 local_38;
+  
+  local_7d8 = 0.0;
+  fStack_7d4 = 0.0;
+  fStack_7d0 = 0.0;
+  fStack_7cc = 0.0;
+  local_7e8 = (void *)0x0;
+  uStack_7e0 = 0;
+  uStack_7dc = 0;
+  local_7c8 = (DrawableShape)0x1;
+  Path::addEllipse(_DAT_005dcf30,_DAT_005dcf40,(Path *)&local_7e8);
+                    /* try { // try from 001fb578 to 001fb584 has its CatchHandler @ 001fc37f */
+  Drawable::Drawable((Drawable *)local_580);
+  uVar9 = uStack_7dc;
+  pvVar4 = local_7e8;
+  local_420 = 0;
+  local_418 = 0;
+  uVar14 = 0;
+  uVar13 = 0;
+  local_410 = 0;
+  uStack_408 = 0;
+  local_400 = (void *)0x0;
+  uStack_3f8 = 0;
+  local_3f0 = 0;
+  uStack_3e8 = 0;
+  local_3e0 = (DrawableShape)0x1;
+  local_3d8 = 0;
+  uStack_3d0 = 0;
+  local_3c8 = 0;
+  uStack_3c0 = 0;
+  local_3b8 = 1;
+  local_3b0[0] = _ZN4juce7ColoursL5blackE_14;
+  local_3a8 = 0;
+  uStack_3a0 = 0;
+  local_398 = ZEXT416(DAT_005d9038);
+  local_388 = 0x3f800000;
+  local_380 = _ZN4juce7ColoursL5blackE_14;
+  local_378 = 0;
+  uStack_370 = 0;
+  local_368 = ZEXT416(DAT_005d9038);
+  local_358 = 0x3f800000;
+  local_580[0] = &PTR__DrawablePath_00708098;
+  uVar10 = (ulong)uStack_7dc;
+  if ((int)uStack_7dc < 1) {
+    uVar8 = 0;
+    pvVar6 = (void *)0x0;
+  }
+  else {
+    uVar8 = (uStack_7dc >> 1) + uStack_7dc + 8 & 0xfffffff8;
+    if ((int)uVar8 < 1) {
+      pvVar6 = (void *)0x0;
+      uVar13 = uVar14;
+    }
+    else {
+      pvVar6 = malloc((ulong)uVar8 << 2);
+      uVar13 = uVar14;
+    }
+    memcpy(pvVar6,pvVar4,uVar10 * 4);
+  }
+  local_3f0 = CONCAT44(fStack_7d4,local_7d8);
+  uStack_3e8 = CONCAT44(fStack_7cc,fStack_7d0);
+  uStack_3f8 = CONCAT44(uVar9,uVar8);
+  local_3e0 = local_7c8;
+                    /* try { // try from 001fb6b5 to 001fb6c1 has its CatchHandler @ 001fc37a */
+  local_400 = pvVar6;
+  DrawableShape::strokeChanged(local_3f0,uVar13,(Component *)local_580);
+  local_7b0 = (undefined **)CONCAT44(local_7b0._4_4_,0x99ffffff);
+  local_7a8 = (void *)0x0;
+  plStack_7a0 = (long *)0x0;
+  local_798 = ZEXT416(DAT_005d9038);
+  local_788 = 0x3f800000;
+  bVar5 = FillType::operator!=((FillType *)local_3b0,(int *)&local_7b0);
+  if (bVar5 != 0) {
+                    /* try { // try from 001fb701 to 001fb729 has its CatchHandler @ 001fc36b */
+    FillType::operator=((FillType *)local_3b0,(FillType *)&local_7b0);
+    Component::internalRepaintUnchecked((long)local_580,0,local_540,'\x01');
+    if (plStack_7a0 != (long *)0x0) {
+      LOCK();
+      plVar1 = plStack_7a0 + 1;
+      *(int *)plVar1 = (int)*plVar1 + -1;
+      UNLOCK();
+      if ((int)*plVar1 == 0) {
+        (**(code **)(*plStack_7a0 + 8))();
+      }
+    }
+  }
+  pvVar4 = local_7a8;
+  if (local_7a8 != (void *)0x0) {
+    *(undefined4 *)((long)local_7a8 + 0x24) = 0;
+    free(*(void **)((long)local_7a8 + 0x18));
+    operator_delete(pvVar4);
+  }
+  uStack_7dc = 0;
+  local_7d8 = 0.0;
+  fStack_7d4 = 0.0;
+  fStack_7d0 = 0.0;
+  fStack_7cc = 0.0;
+  Path::addEllipse(0,DAT_005dcf50,(Path *)&local_7e8);
+  uVar9 = uStack_7dc;
+  lVar11 = (long)(int)uStack_7dc;
+  if (lVar11 == 0) {
+    local_7d8 = _DAT_005dcf80;
+    fStack_7d4 = _UNK_005dcf84;
+    fStack_7d0 = _UNK_005dcf88;
+    fStack_7cc = _UNK_005dcf8c;
+    if ((int)uStack_7e0 < (int)(uStack_7dc + 0xd)) goto LAB_001fb7df;
+  }
+  else {
+    local_7d8 = (float)(-(uint)(DAT_005dcf60 < local_7d8) & (uint)_DAT_005dcf80 |
+                       ~-(uint)(DAT_005dcf60 < local_7d8) & (uint)local_7d8);
+    fStack_7d4 = (float)(-(uint)(fStack_7d4 < DAT_005dcf74) & (uint)_UNK_005dcf84 |
+                        ~-(uint)(fStack_7d4 < DAT_005dcf74) & (uint)fStack_7d4);
+    fStack_7d0 = (float)(-(uint)(DAT_005dcf68 < fStack_7d0) & (uint)_UNK_005dcf88 |
+                        ~-(uint)(DAT_005dcf68 < fStack_7d0) & (uint)fStack_7d0);
+    fStack_7cc = (float)(-(uint)(fStack_7cc < DAT_005dcf7c) & (uint)_UNK_005dcf8c |
+                        ~-(uint)(fStack_7cc < DAT_005dcf7c) & (uint)fStack_7cc);
+    if ((int)uStack_7e0 < (int)(uStack_7dc + 0xd)) {
+LAB_001fb7df:
+      uVar8 = (int)(uStack_7dc + 0xd) / 2 + uStack_7dc + 0x15 & 0xfffffff8;
+      if (uStack_7e0 != uVar8) {
+        if ((int)uVar8 < 1) {
+          free(local_7e8);
+          local_7e8 = (void *)0x0;
+        }
+        else {
+          local_7e8 = realloc(local_7e8,(ulong)uVar8 << 2);
+        }
+      }
+      uStack_7e0 = uVar8;
+    }
+  }
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4) = 0x47c35100;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 4) = 0x41b00000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 8) = 0x42640000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0xc) = 0x47c35080;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x10) = 0x41b00000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x14) = 0x422c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x18) = 0x47c35080;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x1c) = 0x429c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x20) = 0x422c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x24) = 0x47c35080;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x28) = 0x429c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x2c) = 0x42640000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x30) = 0x47c35280;
+  if (uVar9 == -0xd) {
+    local_7d8 = _DAT_005dcfb0;
+    fStack_7d4 = _UNK_005dcfb4;
+    fStack_7d0 = _UNK_005dcfb8;
+    fStack_7cc = _UNK_005dcfbc;
+    if (0xc < (int)uStack_7e0) goto LAB_001fb969;
+  }
+  else {
+    local_7d8 = (float)(-(uint)(DAT_005dcf90 < local_7d8) & (uint)_DAT_005dcfb0 |
+                       ~-(uint)(DAT_005dcf90 < local_7d8) & (uint)local_7d8);
+    fStack_7d4 = (float)(-(uint)(fStack_7d4 < DAT_005dcfa4) & (uint)_UNK_005dcfb4 |
+                        ~-(uint)(fStack_7d4 < DAT_005dcfa4) & (uint)fStack_7d4);
+    fStack_7d0 = (float)(-(uint)(DAT_005dcf98 < fStack_7d0) & (uint)_UNK_005dcfb8 |
+                        ~-(uint)(DAT_005dcf98 < fStack_7d0) & (uint)fStack_7d0);
+    fStack_7cc = (float)(-(uint)(fStack_7cc < DAT_005dcfac) & (uint)_UNK_005dcfbc |
+                        ~-(uint)(fStack_7cc < DAT_005dcfac) & (uint)fStack_7cc);
+    if ((int)(uVar9 + 0x1a) <= (int)uStack_7e0) goto LAB_001fb969;
+  }
+  uVar8 = (int)(uVar9 + 0x1a) / 2 + uVar9 + 0x22 & 0xfffffff8;
+  if (uStack_7e0 != uVar8) {
+    if ((int)uVar8 < 1) {
+      free(local_7e8);
+      local_7e8 = (void *)0x0;
+    }
+    else {
+      local_7e8 = realloc(local_7e8,(ulong)uVar8 << 2);
+    }
+  }
+  uStack_7e0 = uVar8;
+LAB_001fb969:
+  uStack_7dc = uVar9 + 0x1a;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x34) = 0x47c35100;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x38) = 0x422c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x3c) = 0x422c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x40) = 0x47c35080;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x44) = 0x422c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x48) = 0x41b00000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x4c) = 0x47c35080;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x50) = 0x42640000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x54) = 0x41b00000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x58) = 0x47c35080;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x5c) = 0x42640000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x60) = 0x422c0000;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 100) = 0x47c35280;
+  if (uStack_7dc == 0) {
+    local_7d8 = (float)_DAT_005dcfe0;
+    fStack_7d4 = (float)_UNK_005dcfe4;
+    fStack_7d0 = (float)_UNK_005dcfe8;
+    fStack_7cc = (float)_UNK_005dcfec;
+  }
+  else {
+    local_7d8 = (float)(-(uint)(DAT_005dcfc0 < local_7d8) & _DAT_005dcfe0 |
+                       ~-(uint)(DAT_005dcfc0 < local_7d8) & (uint)local_7d8);
+    fStack_7d4 = (float)(-(uint)(fStack_7d4 < DAT_005dcfd4) & _UNK_005dcfe4 |
+                        ~-(uint)(fStack_7d4 < DAT_005dcfd4) & (uint)fStack_7d4);
+    fStack_7d0 = (float)(-(uint)(DAT_005dcfc8 < fStack_7d0) & _UNK_005dcfe8 |
+                        ~-(uint)(DAT_005dcfc8 < fStack_7d0) & (uint)fStack_7d0);
+    fStack_7cc = (float)(-(uint)(fStack_7cc < DAT_005dcfdc) & _UNK_005dcfec |
+                        ~-(uint)(fStack_7cc < DAT_005dcfdc) & (uint)fStack_7cc);
+  }
+  uVar8 = uVar9 + 0x27;
+  if ((int)uStack_7e0 < (int)uVar8) {
+    uVar9 = uVar9 + (int)(uVar9 + 0x27) / 2 + 0x2f & 0xfffffff8;
+    if (uStack_7e0 != uVar9) {
+      if ((int)uVar9 < 1) {
+        free(local_7e8);
+        local_7e8 = (void *)0x0;
+      }
+      else {
+        local_7e8 = realloc(local_7e8,(ulong)uVar9 << 2);
+      }
+    }
+    uVar8 = uStack_7dc + 0xd;
+    uStack_7e0 = uVar9;
+  }
+  pvVar4 = local_7e8;
+  uVar13 = _UNK_005dcff8;
+  lVar11 = (long)(int)uStack_7dc;
+  puVar2 = (undefined8 *)((long)local_7e8 + lVar11 * 4);
+  *puVar2 = _DAT_005dcff0;
+  puVar2[1] = uVar13;
+  uVar13 = _UNK_005dd008;
+  puVar2 = (undefined8 *)((long)local_7e8 + lVar11 * 4 + 0x10);
+  *puVar2 = _DAT_005dd000;
+  puVar2[1] = uVar13;
+  uVar13 = _UNK_005dd018;
+  puVar2 = (undefined8 *)((long)local_7e8 + lVar11 * 4 + 0x20);
+  *puVar2 = _DAT_005dd010;
+  puVar2[1] = uVar13;
+  *(undefined4 *)((long)local_7e8 + lVar11 * 4 + 0x30) = 0x47c35280;
+  local_7c8 = (DrawableShape)0x0;
+                    /* try { // try from 001fbac1 to 001fbaca has its CatchHandler @ 001fc366 */
+  uStack_7dc = uVar8;
+  Drawable::Drawable((Drawable *)&local_7b0);
+  local_650 = 0;
+  local_648 = 0;
+  local_640 = 0;
+  uStack_638 = 0;
+  local_630 = (void *)0x0;
+  uStack_628 = 0;
+  local_620 = 0;
+  uStack_618 = 0;
+  local_610 = (DrawableShape)0x1;
+  local_608 = 0;
+  uStack_600 = 0;
+  local_5f8 = 0;
+  uStack_5f0 = 0;
+  local_5e8 = 1;
+  local_5e0[0] = _ZN4juce7ColoursL5blackE_14;
+  local_5d8 = 0;
+  uStack_5d0 = 0;
+  auVar15 = ZEXT416(DAT_005d9038);
+  uVar10 = (ulong)DAT_005d9038;
+  local_5b8 = 0x3f800000;
+  local_5b0 = _ZN4juce7ColoursL5blackE_14;
+  local_5a8 = 0;
+  uStack_5a0 = 0;
+  local_588 = 0x3f800000;
+  local_7b0 = &PTR__DrawablePath_00708098;
+  local_5c8 = auVar15;
+  local_598 = auVar15;
+  if ((int)uVar8 < 1) {
+    uVar9 = 0;
+    pvVar6 = (void *)0x0;
+  }
+  else {
+    uVar9 = uVar8 + (uVar8 >> 1) + 8 & 0xfffffff8;
+    if ((int)uVar9 < 1) {
+      pvVar6 = (void *)0x0;
+    }
+    else {
+      pvVar6 = malloc((ulong)uVar9 << 2);
+    }
+    memcpy(pvVar6,pvVar4,(ulong)uVar8 << 2);
+    uVar10 = auVar15._0_8_;
+  }
+  local_620 = CONCAT44(fStack_7d4,local_7d8);
+  uStack_618 = CONCAT44(fStack_7cc,fStack_7d0);
+  uStack_628 = CONCAT44(uVar8,uVar9);
+  local_610 = local_7c8;
+                    /* try { // try from 001fbbe7 to 001fbbf0 has its CatchHandler @ 001fc361 */
+  local_630 = pvVar6;
+  DrawableShape::strokeChanged(local_620,uVar10,(Component *)&local_7b0);
+  local_1c0 = (undefined **)CONCAT44(local_1c0._4_4_,0x59000000);
+  local_1b8 = (void *)0x0;
+  plStack_1b0 = (long *)0x0;
+  local_1a8 = ZEXT416(DAT_005d9038);
+  local_198 = 0x3f800000;
+  bVar5 = FillType::operator!=((FillType *)local_5e0,(int *)&local_1c0);
+  if (bVar5 != 0) {
+                    /* try { // try from 001fbc3f to 001fbc64 has its CatchHandler @ 001fc34f */
+    FillType::operator=((FillType *)local_5e0,(FillType *)&local_1c0);
+    Component::internalRepaintUnchecked((long)&local_7b0,0,local_770,'\x01');
+    if (plStack_1b0 != (long *)0x0) {
+      LOCK();
+      plVar1 = plStack_1b0 + 1;
+      *(int *)plVar1 = (int)*plVar1 + -1;
+      UNLOCK();
+      if ((int)*plVar1 == 0) {
+        (**(code **)(*plStack_1b0 + 8))();
+      }
+    }
+  }
+  pvVar4 = local_1b8;
+  if (local_1b8 != (void *)0x0) {
+    *(undefined4 *)((long)local_1b8 + 0x24) = 0;
+    free(*(void **)((long)local_1b8 + 0x18));
+    operator_delete(pvVar4);
+  }
+                    /* try { // try from 001fbca4 to 001fbcb0 has its CatchHandler @ 001fc34a */
+  Drawable::Drawable((Drawable *)&local_1c0);
+  local_1c0 = &PTR__DrawableComposite_00707d08;
+  local_60 = ZEXT416(DAT_005d94c4) << 0x40;
+  local_50 = DAT_005dd020;
+  local_48 = 0;
+  local_38 = 0;
+  uStack_40 = DAT_005dcf50;
+                    /* try { // try from 001fbd0b to 001fbd14 has its CatchHandler @ 001fc345 */
+  pDVar7 = operator_new(0x230);
+                    /* try { // try from 001fbd18 to 001fbd27 has its CatchHandler @ 001fc338 */
+  DrawableShape::DrawableShape(pDVar7,(long)local_580);
+  pvVar4 = local_400;
+  *(undefined ***)pDVar7 = &PTR__DrawablePath_00708098;
+  uVar9 = uStack_3f8._4_4_;
+  uVar10 = (ulong)uStack_3f8._4_4_;
+  uVar13 = extraout_XMM1_Qa;
+  if ((int)uStack_3f8._4_4_ < 1) {
+    uVar8 = 0;
+    pvVar6 = (void *)0x0;
+  }
+  else {
+    uVar8 = (uStack_3f8._4_4_ >> 1) + uStack_3f8._4_4_ + 8 & 0xfffffff8;
+    if ((int)uVar8 < 1) {
+      pvVar6 = (void *)0x0;
+    }
+    else {
+      pvVar6 = malloc((ulong)uVar8 << 2);
+    }
+    memcpy(pvVar6,pvVar4,uVar10 * 4);
+  }
+  pvVar4 = *(void **)(pDVar7 + 0x180);
+  *(void **)(pDVar7 + 0x180) = pvVar6;
+  *(uint *)(pDVar7 + 0x188) = uVar8;
+  *(uint *)(pDVar7 + 0x18c) = uVar9;
+  *(undefined8 *)(pDVar7 + 400) = local_3f0;
+  *(undefined8 *)(pDVar7 + 0x198) = uStack_3e8;
+  pDVar7[0x1a0] = local_3e0;
+  free(pvVar4);
+                    /* try { // try from 001fbdc1 to 001fbdc8 has its CatchHandler @ 001fc32b */
+  DrawableShape::strokeChanged
+            (CONCAT44(extraout_XMM0_Db,extraout_XMM0_Da),uVar13,(Component *)pDVar7);
+                    /* try { // try from 001fbdcc to 001fbdee has its CatchHandler @ 001fc3d2 */
+  (**(code **)(*(long *)pDVar7 + 0x60))(pDVar7,1);
+  Component::addChildComponent((Component *)&local_1c0,(Component *)pDVar7,0xffffffff);
+                    /* try { // try from 001fbdef to 001fbdf8 has its CatchHandler @ 001fc326 */
+  pDVar7 = operator_new(0x230);
+                    /* try { // try from 001fbdfc to 001fbe08 has its CatchHandler @ 001fc324 */
+  DrawableShape::DrawableShape(pDVar7,(long)&local_7b0);
+  pvVar4 = local_630;
+  *(undefined ***)pDVar7 = &PTR__DrawablePath_00708098;
+  uVar9 = uStack_628._4_4_;
+  uVar10 = (ulong)uStack_628._4_4_;
+  uVar13 = extraout_XMM1_Qa_00;
+  if ((int)uStack_628._4_4_ < 1) {
+    uVar8 = 0;
+    pvVar6 = (void *)0x0;
+  }
+  else {
+    uVar8 = (uStack_628._4_4_ >> 1) + uStack_628._4_4_ + 8 & 0xfffffff8;
+    if ((int)uVar8 < 1) {
+      pvVar6 = (void *)0x0;
+    }
+    else {
+      pvVar6 = malloc((ulong)uVar8 << 2);
+    }
+    memcpy(pvVar6,pvVar4,uVar10 * 4);
+  }
+  pvVar4 = *(void **)(pDVar7 + 0x180);
+  *(void **)(pDVar7 + 0x180) = pvVar6;
+  *(uint *)(pDVar7 + 0x188) = uVar8;
+  *(uint *)(pDVar7 + 0x18c) = uVar9;
+  *(undefined8 *)(pDVar7 + 400) = local_620;
+  *(undefined8 *)(pDVar7 + 0x198) = uStack_618;
+  pDVar7[0x1a0] = local_610;
+  free(pvVar4);
+                    /* try { // try from 001fbe9f to 001fbea6 has its CatchHandler @ 001fc322 */
+  DrawableShape::strokeChanged
+            (CONCAT44(extraout_XMM0_Db_00,extraout_XMM0_Da_00),uVar13,(Component *)pDVar7);
+                    /* try { // try from 001fbeaa to 001fbecc has its CatchHandler @ 001fc3cd */
+  (**(code **)(*(long *)pDVar7 + 0x60))(pDVar7,1);
+  Component::addChildComponent((Component *)&local_1c0,(Component *)pDVar7,0xffffffff);
+  local_350 = (undefined **)CONCAT44(local_350._4_4_,0xcc000000);
+  local_348 = (void *)0x0;
+  plStack_340 = (long *)0x0;
+  local_338 = ZEXT416(DAT_005d9038);
+  local_328 = 0x3f800000;
+  bVar5 = FillType::operator!=((FillType *)local_5e0,(int *)&local_350);
+  if (bVar5 != 0) {
+                    /* try { // try from 001fbf1b to 001fbf40 has its CatchHandler @ 001fc310 */
+    FillType::operator=((FillType *)local_5e0,(FillType *)&local_350);
+    Component::internalRepaintUnchecked((long)&local_7b0,0,local_770,'\x01');
+    if (plStack_340 != (long *)0x0) {
+      LOCK();
+      plVar1 = plStack_340 + 1;
+      *(int *)plVar1 = (int)*plVar1 + -1;
+      UNLOCK();
+      if ((int)*plVar1 == 0) {
+        (**(code **)(*plStack_340 + 8))();
+      }
+    }
+  }
+  pvVar4 = local_348;
+  if (local_348 != (void *)0x0) {
+    *(undefined4 *)((long)local_348 + 0x24) = 0;
+    free(*(void **)((long)local_348 + 0x18));
+    operator_delete(pvVar4);
+  }
+                    /* try { // try from 001fbf80 to 001fbf8c has its CatchHandler @ 001fc308 */
+  Drawable::Drawable((Drawable *)&local_350);
+  local_350 = &PTR__DrawableComposite_00707d08;
+  local_1f0 = ZEXT416(DAT_005d94c4) << 0x40;
+  local_1e0 = DAT_005dd020;
+  local_1d8 = 0;
+  local_1c8 = 0;
+  uStack_1d0 = DAT_005dcf50;
+                    /* try { // try from 001fbfe7 to 001fbff0 has its CatchHandler @ 001fc303 */
+  pDVar7 = operator_new(0x230);
+                    /* try { // try from 001fbff4 to 001fc003 has its CatchHandler @ 001fc2f3 */
+  DrawableShape::DrawableShape(pDVar7,(long)local_580);
+  pvVar4 = local_400;
+  *(undefined ***)pDVar7 = &PTR__DrawablePath_00708098;
+  uVar9 = uStack_3f8._4_4_;
+  uVar10 = (ulong)uStack_3f8._4_4_;
+  uVar13 = extraout_XMM1_Qa_01;
+  if ((int)uStack_3f8._4_4_ < 1) {
+    uVar8 = 0;
+    pvVar6 = (void *)0x0;
+  }
+  else {
+    uVar8 = uStack_3f8._4_4_ + (uStack_3f8._4_4_ >> 1) + 8 & 0xfffffff8;
+    if ((int)uVar8 < 1) {
+      pvVar6 = (void *)0x0;
+    }
+    else {
+      pvVar6 = malloc((ulong)uVar8 << 2);
+    }
+    memcpy(pvVar6,pvVar4,uVar10 * 4);
+  }
+  pvVar4 = *(void **)(pDVar7 + 0x180);
+  *(void **)(pDVar7 + 0x180) = pvVar6;
+  *(uint *)(pDVar7 + 0x188) = uVar8;
+  *(uint *)(pDVar7 + 0x18c) = uVar9;
+  *(undefined8 *)(pDVar7 + 400) = local_3f0;
+  *(undefined8 *)(pDVar7 + 0x198) = uStack_3e8;
+  pDVar7[0x1a0] = local_3e0;
+  free(pvVar4);
+                    /* try { // try from 001fc09a to 001fc0a1 has its CatchHandler @ 001fc2e6 */
+  DrawableShape::strokeChanged
+            (CONCAT44(extraout_XMM0_Db_01,extraout_XMM0_Da_01),uVar13,(Component *)pDVar7);
+                    /* try { // try from 001fc0a5 to 001fc0c4 has its CatchHandler @ 001fc388 */
+  (**(code **)(*(long *)pDVar7 + 0x60))(pDVar7,1);
+  Component::addChildComponent((Component *)&local_350,(Component *)pDVar7,0xffffffff);
+                    /* try { // try from 001fc0c5 to 001fc0ce has its CatchHandler @ 001fc2e1 */
+  pDVar7 = operator_new(0x230);
+                    /* try { // try from 001fc0d2 to 001fc0de has its CatchHandler @ 001fc2df */
+  DrawableShape::DrawableShape(pDVar7,(long)&local_7b0);
+  pvVar4 = local_630;
+  *(undefined ***)pDVar7 = &PTR__DrawablePath_00708098;
+  uVar9 = uStack_628._4_4_;
+  uVar10 = (ulong)uStack_628._4_4_;
+  uVar13 = extraout_XMM1_Qa_02;
+  if ((int)uStack_628._4_4_ < 1) {
+    uVar8 = 0;
+    pvVar6 = (void *)0x0;
+  }
+  else {
+    uVar8 = uStack_628._4_4_ + (uStack_628._4_4_ >> 1) + 8 & 0xfffffff8;
+    if ((int)uVar8 < 1) {
+      pvVar6 = (void *)0x0;
+    }
+    else {
+      pvVar6 = malloc((ulong)uVar8 << 2);
+    }
+    memcpy(pvVar6,pvVar4,uVar10 * 4);
+  }
+  pvVar4 = *(void **)(pDVar7 + 0x180);
+  *(void **)(pDVar7 + 0x180) = pvVar6;
+  *(uint *)(pDVar7 + 0x188) = uVar8;
+  *(uint *)(pDVar7 + 0x18c) = uVar9;
+  *(undefined8 *)(pDVar7 + 400) = local_620;
+  *(undefined8 *)(pDVar7 + 0x198) = uStack_618;
+  pDVar7[0x1a0] = local_610;
+  free(pvVar4);
+                    /* try { // try from 001fc175 to 001fc17c has its CatchHandler @ 001fc2dd */
+  DrawableShape::strokeChanged
+            (CONCAT44(extraout_XMM0_Db_02,extraout_XMM0_Da_02),uVar13,(Component *)pDVar7);
+                    /* try { // try from 001fc180 to 001fc19f has its CatchHandler @ 001fc386 */
+  (**(code **)(*(long *)pDVar7 + 0x60))(pDVar7,1);
+  Component::addChildComponent((Component *)&local_350,(Component *)pDVar7,0xffffffff);
+                    /* try { // try from 001fc1a0 to 001fc1a9 has its CatchHandler @ 001fc384 */
+  this = operator_new(0x250);
+                    /* try { // try from 001fc1ad to 001fc1bd has its CatchHandler @ 001fc2db */
+  translate((juce *)&local_7b8,(byte *)"Additional Items");
+                    /* try { // try from 001fc1be to 001fc1ca has its CatchHandler @ 001fc2af */
+  Button::Button(this,&local_7b8);
+  *(undefined ***)this = &PTR__DrawableButton_00707240;
+  *(undefined ***)(this + 0xf0) = &PTR__DrawableButton_00707428;
+  *(undefined4 *)(this + 0x1f8) = 0;
+  *(undefined8 *)(this + 0x200) = 0;
+  *(undefined8 *)(this + 0x208) = 0;
+  *(undefined8 *)(this + 0x210) = 0;
+  *(undefined8 *)(this + 0x218) = 0;
+  *(undefined8 *)(this + 0x220) = 0;
+  *(undefined8 *)(this + 0x228) = 0;
+  *(undefined8 *)(this + 0x230) = 0;
+  *(undefined8 *)(this + 0x238) = 0;
+  *(undefined8 *)(this + 0x240) = 0;
+  *(undefined4 *)(this + 0x248) = 3;
+  piVar12 = (int *)(local_7b8 + -0x10);
+  if (piVar12 != &emptyString) {
+    LOCK();
+    iVar3 = *piVar12;
+    *piVar12 = *piVar12 + -1;
+    UNLOCK();
+    if (iVar3 == 0) {
+      operator_delete__(piVar12);
+    }
+  }
+                    /* try { // try from 001fc248 to 001fc25f has its CatchHandler @ 001fc384 */
+  DrawableButton::setImages((long *)this,(long *)&local_1c0,(long *)&local_350);
+  DrawableComposite::~DrawableComposite((DrawableComposite *)&local_350);
+  DrawableComposite::~DrawableComposite((DrawableComposite *)&local_1c0);
+  DrawableShape::~DrawableShape((DrawableShape *)&local_7b0);
+  DrawableShape::~DrawableShape((DrawableShape *)local_580);
+  free(local_7e8);
+  return this;
+}
+
+

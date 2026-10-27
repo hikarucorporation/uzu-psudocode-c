@@ -1,0 +1,1 @@
+../Functions/canvas_getindex_004fe2e0.c

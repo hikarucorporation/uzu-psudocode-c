@@ -1,0 +1,1 @@
+../Functions/do_getparentcanvas_00579b40.c

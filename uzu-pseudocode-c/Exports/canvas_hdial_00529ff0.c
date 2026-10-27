@@ -1,0 +1,1 @@
+../Functions/canvas_hdial_00529ff0.c

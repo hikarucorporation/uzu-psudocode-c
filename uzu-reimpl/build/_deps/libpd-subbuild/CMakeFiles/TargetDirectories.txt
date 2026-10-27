@@ -1,0 +1,3 @@
+/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/CMakeFiles/libpd-populate.dir
+/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/CMakeFiles/edit_cache.dir
+/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/libpd-subbuild/CMakeFiles/rebuild_cache.dir

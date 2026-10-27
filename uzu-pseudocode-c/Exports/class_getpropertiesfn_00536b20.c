@@ -1,0 +1,1 @@
+../Functions/class_getpropertiesfn_00536b20.c

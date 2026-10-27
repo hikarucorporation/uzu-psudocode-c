@@ -1,0 +1,1 @@
+../Functions/canvas_getdir_004fddc0.c

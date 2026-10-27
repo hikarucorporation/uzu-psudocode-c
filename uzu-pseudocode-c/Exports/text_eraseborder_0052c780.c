@@ -1,0 +1,1 @@
+../Functions/text_eraseborder_0052c780.c

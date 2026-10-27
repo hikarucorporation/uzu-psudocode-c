@@ -1,0 +1,1 @@
+../Functions/class_isdrawcommand_00536a20.c

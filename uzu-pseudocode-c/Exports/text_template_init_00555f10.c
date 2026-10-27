@@ -1,0 +1,1 @@
+../Functions/text_template_init_00555f10.c

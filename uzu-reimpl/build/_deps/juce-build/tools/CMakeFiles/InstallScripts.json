@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/juce-build/tools/cmake_install.cmake",
+		"/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/juce-build/tools/modules/cmake_install.cmake",
+		"/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/juce-build/tools/extras/Build/cmake_install.cmake",
+		"/home/alex/Documentos/Codigo_Fuente/hikaru-workspace/uzu-decompiled/uzu-reimpl/build/_deps/juce-build/tools/extras/Build/juceaide/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

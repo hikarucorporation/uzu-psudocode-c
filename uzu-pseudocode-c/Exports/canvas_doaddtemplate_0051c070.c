@@ -1,0 +1,1 @@
+../Functions/canvas_doaddtemplate_0051c070.c

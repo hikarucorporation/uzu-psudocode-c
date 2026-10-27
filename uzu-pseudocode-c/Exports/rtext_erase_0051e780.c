@@ -1,0 +1,1 @@
+../Functions/rtext_erase_0051e780.c

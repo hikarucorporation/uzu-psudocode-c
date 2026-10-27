@@ -1,0 +1,1 @@
+../Functions/canvas_properties_0050ba30.c

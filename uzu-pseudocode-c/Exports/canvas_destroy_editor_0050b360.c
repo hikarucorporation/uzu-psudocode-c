@@ -1,0 +1,1 @@
+../Functions/canvas_destroy_editor_0050b360.c

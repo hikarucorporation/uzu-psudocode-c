@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/uzu_else.dir/third_party/else/biquads~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/biquads~.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/blocksize~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/blocksize~.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/car2pol~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/car2pol~.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/delay~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/delay~.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/insert.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/insert.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/loop.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/loop.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/message.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/message.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/nyquist~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/nyquist~.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/pol2car~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/pol2car~.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/round~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/round~.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/scale.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/scale.c.o.d"
+  "CMakeFiles/uzu_else.dir/third_party/else/scale~.c.o"
+  "CMakeFiles/uzu_else.dir/third_party/else/scale~.c.o.d"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/buffer.c.o"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/buffer.c.o.d"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/elsefile.c.o"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/elsefile.c.o.d"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/magic.c.o"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/magic.c.o.d"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/nlist.c.o"
+  "CMakeFiles/uzu_else.dir/tmp/opencode/pd-else/Source/Shared/nlist.c.o.d"
+  "libuzu_else.a"
+  "libuzu_else.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/uzu_else.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

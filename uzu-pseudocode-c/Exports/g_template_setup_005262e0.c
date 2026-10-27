@@ -1,0 +1,1 @@
+../Functions/g_template_setup_005262e0.c
